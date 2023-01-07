@@ -54,23 +54,22 @@ background-size: contain;
 .window-box .homepage1{
     width:500px;
     height:500px; 
-    background-size: contain;
     background-repeat: no-repeat;
     justify-content: left;
     margin: 40px;
-    position: positive;
+    position: relative;
     text-align: center;
 
 }
 .window-box .homepage2 {
     background-image: url(assets/window-box.png);
     background-position: right;
-    width: 700px;
-    height:100px; 
+    width: 500px;
+    height:500px; 
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: right;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     margin-left: 700px;
     position: relative;
     text-align: right;
@@ -90,11 +89,11 @@ text-align: left;
 }
 .window-box .window-boxText .homepage2 {
     font-size: 10px;
-    text-align: right;
+text-align: left;
     position: absolute;
-    margin-bottom: 500%;
-    margin-right: 500%;
-    transform: translate(10%, 10%);
+    bottom: 500%;
+    right: 500%;
+    transform: translate(50%, 50%);
     display: flex;
     align-items: right;
     justify-content: right;
