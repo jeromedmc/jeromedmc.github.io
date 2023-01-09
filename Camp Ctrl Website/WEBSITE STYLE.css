@@ -144,6 +144,10 @@ float: right;
     overflow: auto;  
 }
 
+/*///////////*/
+/*// EMBEDS //*/
+/*///////////*/
+
 .instaembed {
     transform: scale(-40%);
     rotate: 180deg;
@@ -165,7 +169,7 @@ padding-top: 120px;
         transform: scale(-50%);
         rotate: 180deg;
         margin-right: 30px;
-
+        
         float: left;
 }
 
