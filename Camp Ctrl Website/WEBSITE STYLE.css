@@ -15,9 +15,9 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-nav, a{
-    
-}
+
+
+
 /*///////////*/
 /*// CLASSES //*/
 /*///////////*/
@@ -48,52 +48,50 @@ background-size: contain;
     height:500px; 
     background-repeat: no-repeat;
     position: relative;
+float: left;
     text-align: center;
-
+margin-LEFT: 40px;
+margin-bottom: 10px;
 }
 .window-box .homepage1{
     width:500px;
     height:500px; 
-    background-repeat: no-repeat;
-    justify-content: left;
-    margin: 40px;
-    position: relative;
-    text-align: center;
+   
+    float: left;
+ 
 
 }
-.window-box .homepage2 {
-    background-image: url(assets/window-box.png);
-    background-position: right;
-    width: 500px;
+
+.window-box .homepage2{
+    width:500px;
     height:500px; 
-    background-size: contain;
-    background-repeat: no-repeat;
-    justify-content: right;
-    margin-bottom: 60px;
-    margin-left: 700px;
-    position: relative;
-    text-align: right;
+   
+    float: right;
+ 
 
 }
+
 
 .window-box .window-boxText{
-    font-size: 13px;
-text-align: left;
+    font-size: 20px;
+    text-align: left;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    float: left;
     display: flex;
     align-items: left;
     justify-content: left;
 }
+
 .window-box .window-boxText .homepage2 {
     font-size: 10px;
 text-align: left;
     position: absolute;
     bottom: 500%;
     right: 500%;
-    transform: translate(50%, 50%);
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: right;
     justify-content: right;
@@ -113,17 +111,70 @@ border-radius: 7px;
 }
 
 .window-box .window-boxText a {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/2048px-Spotify_logo_without_text.svg.png);
     margin: 0px;
-    padding-right: 0px;
     padding:0px;
     text-decoration: none;
     color: black;
     box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.5 );
+    content: "";
+    clear: both;
+    display: table;
 }
 
+.about1
+{
+width: 255px;
+height: 97px;
+margin: 9px;
+resize: both;  
+overflow: auto; 
+float: left;}
+.about2
+{ 
+width: 455px;
 
+font-size: 9px;
+text-align: left;
+height: 90px;
+float: right;
+}
 
+.about1 .about1 {
+    resize: horizontal;  
+    overflow: auto;  
+}
+
+.instaembed {
+    transform: scale(-40%);
+    rotate: 180deg;
+    margin: 0px;
+padding-top: 120px;
+}
+.twtembed {
+    
+    padding-top: 200px;
+    transform: scale(-60%);
+
+    rotate: 180deg;
+    
+    margin: 0px;
+}
+
+.amembed{
+    padding-top: 45px;
+        transform: scale(-50%);
+        rotate: 180deg;
+        margin-right: 30px;
+
+        float: left;
+}
+
+.spembed{
+    float: right;
+    transform: scale(-90%);
+    rotate: 180deg;
+    margin-left: 100px;
+}
 /*dock*/
 
 .dock {
