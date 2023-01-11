@@ -9,6 +9,7 @@ h1 {text-align: center;
     font-size: xx-large;
     text-shadow: 2px 2px 5px rgb(0, 0, 20, 0.7) ;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 p {
@@ -52,6 +53,10 @@ float: left;
     text-align: center;
 margin-LEFT: 40px;
 margin-bottom: 10px;
+animation: window-box ease 5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+transform: scale(-900%);
 }
 .window-box .homepage1{
     width:500px;
@@ -115,10 +120,12 @@ border-radius: 7px;
     padding:0px;
     text-decoration: none;
     color: black;
-    box-shadow: 0px 1px 5px 0px rgb(0, 0, 0, 0.5 );
+    text-align: left;
     content: "";
     clear: both;
     display: table;
+    filter: drop-shadow(2px 2px 2px #222);
+    
 }
 
 .about1
@@ -144,33 +151,62 @@ float: right;
     overflow: auto;  
 }
 
+
+
+
+
+
+
+
+
+
 /*///////////*/
 /*// EMBEDS //*/
 /*///////////*/
+
+.newsembed {
+    border: none;
+border-radius: 10px;
+}
+
+
+.ytembed {
+border: none;
+border-radius: 10px;
+
+}
+
 
 .instaembed {
     transform: scale(-40%);
     rotate: 180deg;
     margin: 0px;
 padding-top: 120px;
+border: none;
+border-radius: 10px;
+margin-left: 30px;
 }
 .twtembed {
-    
-    padding-top: 200px;
-    transform: scale(-60%);
-
+    padding-top: 60px;
+    margin-bottom: 20px;
+    transform: scale(-55%);
+    height: 10px;
+    margin-top: 200px;
     rotate: 180deg;
-    
-    margin: 0px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 90px;
 }
 
 .amembed{
-    padding-top: 45px;
+    padding-top: 60px;
+    margin-bottom: 10px;
         transform: scale(-50%);
         rotate: 180deg;
         margin-right: 30px;
-        
+        border-radius: 20px;
         float: left;
+
 }
 
 .spembed{
@@ -178,7 +214,14 @@ padding-top: 120px;
     transform: scale(-90%);
     rotate: 180deg;
     margin-left: 100px;
+    border-radius: 10px;
 }
+
+.wikiembed{
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
 /*dock*/
 
 .dock {
@@ -211,6 +254,7 @@ padding-top: 120px;
 }
 
 .dock-nav a{
+    font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     bottom: 0;
     left: 0;
@@ -221,4 +265,89 @@ padding-top: 120px;
     padding: 55px;
     text-align: center;
     position: relative;
+    
 }
+
+
+/*animation*/
+
+.intro {
+animation: intro ease 0s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;}
+.intro1 {
+animation: intro ease 5s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;}
+
+.introimg{
+    margin: 0;
+    width: 1560px;
+    height: 780px;}
+
+@keyframes intro {
+    0% {
+		display: inline-flex;
+		opacity: 1;}
+
+	99% {
+		display: inline-flex;
+		opacity: 0;
+        width: 0px;
+        height: 0px;}
+
+	100% {
+		display: none;
+		opacity: 0;
+        width: 0px;
+        height: 0px;}
+}
+
+@keyframes window-box {
+    0% {
+        transform: scale(0);
+    }
+    99% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+/* contract form */
+
+button 
+{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    border: rgb(0, 0, 0, 0.5 );
+}
+
+textarea {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0, 0 );
+    border-radius: 5px;
+    border: rgb(0, 0, 0, 0.5 );
+}
+
+input {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0, 0 );
+    border-radius: 5px;
+    border: rgb(0, 0, 0, 0.5 );
+}
+select {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(0, 0, 0, 0 );
+    border-radius: 5px;
+    border: rgb(0, 0, 0, 0.5 );
+}
+
+
