@@ -27,7 +27,6 @@ p {
 /*background*/
 
 .background {
-
     background-image: url(assets/wallpaper.png);
     background-size:cover;
     background-repeat:no-repeat;
@@ -55,26 +54,17 @@ margin-LEFT: 40px;
 margin-bottom: 10px;
 animation: window-box ease 5s;
 animation-iteration-count: 1;
-animation-fill-mode: forwards;
-transform: scale(-900%);
-}
+animation-fill-mode: forwards;}
+
 .window-box .homepage1{
     width:500px;
     height:500px; 
-    
-    float: left;
-
-}
+    float: left;}
 
 .window-box .homepage2{
     width:500px;
     height:500px; 
-   
-    float: right;
- 
-
-}
-
+    float: right;}
 
 .window-box .window-boxText{
     font-size: 20px;
@@ -86,9 +76,8 @@ transform: scale(-900%);
     float: left;
     display: flex;
     align-items: left;
-    justify-content: left;
+    justify-content: left;}
 
-}
 .window-box .window-boxText li{
     font-size: 20px;
     text-align: left;
@@ -96,16 +85,16 @@ transform: scale(-900%);
     display: flex;
     align-items: left;
     justify-content: left;
-    color: rgb(255, 255, 255, 0.5 );
-}
+    color: rgb(255, 255, 255, 0.5 );}
+
 .window-box .window-boxText li a .file-name{
     font-size: 12px;
     text-align: left;
     float: left;
     display: flex;
     margin: 9px;
-    color: rgb(0, 0, 0, 0.5 );
-}
+    color: rgb(0, 0, 0, 0.5 );}
+
 .window-box .window-boxText li .file-date{
     font-size: 12px;
     margin: 0px;
@@ -136,8 +125,7 @@ text-align: left;
 border-radius: 7px;
     flex-basis: 40%;
 }
-  .window-box .window-boxText p {
-
+.window-box .window-boxText p {
     margin: 0;
     padding-right: 0px;
     padding: 0;
@@ -156,18 +144,51 @@ border-radius: 7px;
     
 }
 
+.window-box .window-boxText .ctrlnow {
+    font-size: 120%;
+    float: left;
+    text-align: left;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    transform: translateX(-13%)
+    translateY(20px);
+}
+
+.musiclinksimg{
+    height: 50%;
+    transform: scaleX(100%);
+    transform: scale(120%)
+    translate(40%, -5px)
+    translateY(15%);
+}
+
+.musiclinks1{
+    float: left;
+    transform: translate(-100%, 100%);
+}
+
+.musiclinks2{
+    float: right;
+}
+.musiclinks3{
+    scale: 250%;
+    transform: translateX(-25%);
+}
+
 .about1
 {
-width: 255px;
-height: 97px;
-margin: 9px;
-resize: both;  
+width: 300px;
+margin: 0px;
+resize: both; 
+scale: 150%;
+transform: translateX(7%);
+filter: drop-shadow(7px 5px #222);
 overflow: auto; 
 float: left;}
 .about2
 { 
 width: 455px;
-
 font-size: 9px;
 text-align: left;
 height: 90px;
@@ -330,7 +351,9 @@ animation-fill-mode: forwards;}
 .introimg{
     margin: 0;
     width: 1560px;
-    height: 780px;}
+    height: 780px;
+position: relative;
+transform: translateX(-2%);}
 
 @keyframes intro {
     0% {
@@ -370,8 +393,7 @@ animation-fill-mode: forwards;}
 
 /* contract form */
 
-button 
-{
+button {
     font-family: 'Times New Roman', Times, serif;
     color: red;
     border: rgb(0, 0, 0, 0.5 );
@@ -397,7 +419,6 @@ select {
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(255, 255, 255, 0.5);
     border-radius: 5px;
-    border: rgb(0, 0, 0, 0.5 );
-}
+    border: rgb(0, 0, 0, 0.5 );}
 
 
